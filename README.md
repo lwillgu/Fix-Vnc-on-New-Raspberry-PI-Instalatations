@@ -2,6 +2,7 @@
 For some reason raspi vnc often doesn't work on new installation. Freaks out over using shared lib files. 
 
 Run this code:
+<code>
 sudo su -
 cd /usr/lib
 wget -nv https://github.com/raspberrypi/firmware/raw/stable/opt/vc/lib/libbcm_host.so
@@ -14,3 +15,4 @@ wget -nv https://github.com/raspberrypi/firmware/raw/stable/opt/vc/lib/libmmal_v
 wget -nv https://github.com/raspberrypi/firmware/raw/stable/opt/vc/lib/libvchiq_arm.so
 wget -nv https://github.com/raspberrypi/firmware/raw/stable/opt/vc/lib/libvcsm.so
 wget -nv https://github.com/raspberrypi/firmware/raw/stable/opt/vc/lib/libcontainers.so
+</code>
